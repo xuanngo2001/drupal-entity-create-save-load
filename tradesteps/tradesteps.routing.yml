@@ -1,0 +1,7 @@
+tradesteps.entity_api:
+  path: '/use_entity_api'
+  defaults:
+    _controller: 'Drupal\tradesteps\Controller\UseEntityAPI::usage'
+    _title: 'Use of Entity API'
+  requirements:
+    _permission: 'access content'
