@@ -1,5 +1,5 @@
-name: Hello World Module
-description: Creates a page showing "Hello World".
+name: Tradesteps Examples
+description: Examples from OpenWritings.net.
 package: Custom
 
 type: module
