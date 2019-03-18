@@ -23,7 +23,12 @@ class UseEntityAPI extends ControllerBase{
         //      $entity->get('title')->getString(): Return a value.
         $new_value=$entity->get('title')->getString() . ", updated on " . date('D, d M Y H:i:s');
         $entity->get('title')->setValue($new_value);
-
+        $entity->get('body')->setValue(array(
+                                        'summary' => "This is a summary",
+                                        'value' => "This is the very long body....",
+                                        'format' => 'basic_html',
+                                        ));
+                                        
         // Save the entity object. It will commit to database.
         $entity->save();
         $saved_entity_id = $entity->id();
