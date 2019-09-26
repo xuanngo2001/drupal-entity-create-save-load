@@ -43,6 +43,7 @@ class UseEntityAPI extends ControllerBase{
         $loaded_id = $loaded_entity->id();
         $loaded_title = $loaded_entity->getTitle();
         $loaded_type = $loaded_entity->getType();
+        $author = $loaded_entity->getOwner()->getDisplayName();
 
         $html = 'Info of created ['.$loaded_type.']: [node id = '. $loaded_id. '] : ['. $loaded_title.']';
         $html .= '<pre>'. $entity_info. '</pre>';
